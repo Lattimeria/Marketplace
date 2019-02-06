@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knauf Market - ВХОД В ЛИЧНЫЙ КАБИНЕТ</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <link href="css/jquery.fancybox.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="index.html" class="main-nav__logo"><img src="images/logo.png " alt="Knauf"></a>
+            <a href="https://www.knauf.ru/" class="main-nav__mainLogo"><img src="images/main-site-logo.png " alt="Knauf.ru"></a>
+            <a href="javascript:;"  onclick="$('.modal-cities__link').fancybox({
+        padding: 0,
+    }) .trigger('click');" class="main-nav__geo"></a>
+            <a href="javascript:;" class="main-nav__menuButton-mobile">Меню</a>
+            <ul class="main-nav__items">
+                <li class="main-nav__item  main-nav__item--close yesMobile"><a href="javascript:;" class="main-nav__item-link"><span class="sr-only">Закрыть</span></a></li>
+                <li class="main-nav__item  main-nav__item--mainLogo yesMobile"><a href="https://www.knauf.ru/" class="main-nav__item-link">knauf.ru</a></li>
+                <li class="main-nav__item  main-nav__item--index yesMobile"><a href="/" class="main-nav__item-link">Главная</a></li>
+                <li class="main-nav__item">
+                    <a href="catalog.html" class="main-nav__item-link">Каталог</a>
+                    <ul class="main-nav__item-dropdown">
+                        <li class="main-nav__item-dropdown-item  main-nav__item-dropdown--span noMobile"><span>Ваш выбор</span></li>
+                        <li class="main-nav__item-dropdown-item  main-nav__item-dropdown-item--pageLink"><a href="catalog.html" class="main-nav__item-dropdown-link">Обзор страницы Каталог</a></li>
+                        <li class="main-nav__item-dropdown-item"><a href="catalog-0.html" class="main-nav__item-dropdown-link">Новинки</a></li>
+                        <li class="main-nav__item-dropdown-item"><a href="catalog-1.html" class="main-nav__item-dropdown-link">Листовые материалы</a>
+                            <ul class="main-nav__item-dropdown2">
+                                <li class="main-nav__item-dropdown2-item  main-nav__item-dropdown-item--pageLink"><a href="catalog.html" class="main-nav__item-dropdown-link">Обзор страницы Листовые материалы</a></li>
+                                <li class="main-nav__item-dropdown2-item"><a href="catalog-1-1.html" class="main-nav__item-dropdown2-link">КНАУФ-Листы</a></li>
+                                <li class="main-nav__item-dropdown2-item"><a href="catalog-1-2.html" class="main-nav__item-dropdown2-link">КНАУФ-Акуборд</a></li>
+                                <li class="main-nav__item-dropdown2-item"><a href="catalog-1-3.html" class="main-nav__item-dropdown2-link">КНАУФ-Акустика</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-nav__item-dropdown-item"><a href="catalog-2.html" class="main-nav__item-dropdown-link">Сухие смеси и&nbsp;готовые составы</a></li>
+                        <li class="main-nav__item-dropdown-item"><a href="catalog-3.html" class="main-nav__item-dropdown-link">Гипсоплиты</a></li>
+                        <li class="main-nav__item-dropdown-item">
+                            <a href="catalog-4.html" class="main-nav__item-dropdown-link">Комплектующие</a>
+                        </li>
+                        <li class="main-nav__item-dropdown-item"><a href="catalog-5.html" class="main-nav__item-dropdown-link">Профили</a></li>
+                        <li class="main-nav__item-dropdown-item"><a href="catalog-6.html" class="main-nav__item-dropdown-link">Инструменты</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav__item">
+                    <a href="buyers.html" class="main-nav__item-link">Покупателям</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="shops.html" class="main-nav__item-link">Точки продаж</a>
+                </li>
+                <li class="main-nav__item  main-nav__item--active  main-nav__item--login">
+                    <a href="login.html" class="main-nav__item-link main-nav__item-link--login">Вход</a>
+                    <a href="javascript:;" class="main-nav__item-link  main-nav__item-link--logout">Выход</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="faq.html" class="main-nav__item-link">Вопрос-ответ</a>
+                </li>
+            </ul>
+            <a href="account.html" class="main-nav__account"><span class="sr-only">Аккаунт</span></a>
+            <a href="cart.html" class="main-nav__cart"><span class="sr-only">Корзина</span></a>
+            <div class="main-nav__search">
+                <a href="javascript:;"><span class="sr-only">Поиск</span></a>
+                <form action="" method="GET" onsubmit="">
+                    <input type="text" name="search" id="search" maxlength="50"><button type="submit">OK</button>
+                </form>
+            </div>
+        </nav>
+        <ol class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item"  href='#'><span itemprop="name">Личный кабинет</span></a>
+                <meta itemprop="position" content="1" />
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item"  href='#'><span itemprop="name">Регистрация</span></a>
+                <meta itemprop="position" content="2" />
+            </li>
+        </ol>
+    </header>
+    <main>
+        <aside>
+            <div class="anchor-menu">
+                <ul class="anchor-menu__items">
+                    <li class="anchor-menu__item"><a href="#sx" class="anchor-menu__socialBtn  anchor-menu__socialBtn--bookmark"></a></li>
+                    <li class="anchor-menu__item"><a href="#sx" class="anchor-menu__socialBtn  anchor-menu__socialBtn--mail"></a></li>
+                    <li class="anchor-menu__item"><a href="https://www.youtube.com/user/KnaufRussia" class="anchor-menu__socialBtn  anchor-menu__socialBtn--youtube"></a></li>
+                    <li class="anchor-menu__item"><a href="https://twitter.com/Knauf_Russia" class="anchor-menu__socialBtn  anchor-menu__socialBtn--twitter"></a></li>
+                    <li class="anchor-menu__item"><a href="https://www.facebook.com/KnaufRu/" class="anchor-menu__socialBtn  anchor-menu__socialBtn--facebook"></a></li>
+                </ul>
+            </div>
+        </aside>
+        <section class="bcgBlock  bcgBlock--indexTop" style="background-image: url(images/blockbcg3.jpg);">
+            <div class="bcgBlock__wrapper">
+                <h2 class="bcgBlock__title">Вход в&nbsp;личный кабинет</h2>
+            </div>
+        </section>
+        <section class="block">
+            <div class="block__wrapper">
+                <h2 class="block__title">Вход</h2>
+                <div class="block__textBlock">
+                    <p class="block__text">
+                        Если у&nbsp;вас нет аккаунта, пожалуйста <a href="register.html" class="block__link">Зарегистрируйтесь</a>
+                    </p>
+                </div>
+                <form action="#" method="post" class="form  form--login">
+                    <div class="form__wrapper">
+                        <div class="form__group">
+                            <label for="email">Эл. почта</label>
+                            <input type="email" name="email" placeholder="Введите вашу&nbsp;эл. почту" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="password">Пароль</label>
+                            <input type="password" name="password" placeholder="Введите пароль" required>
+                        </div>
+                        <div class="form__social">
+                            <p>Войти с&nbsp;помощью соцсетей</p>
+                            <div class="form__social-items">
+                                <a href="javascript:;" class="form__social-item  form__social-item--vk"><span class="sr-only">Вконтакте</span></a>
+                                <a href="javascript:;" class="form__social-item  form__social-item--fb"><span class="sr-only">Facebook</span></a>
+                                <a href="javascript:;" class="form__social-item  form__social-item--ok"><span class="sr-only">Одноклассники</span></a>
+                                <a href="javascript:;" class="form__social-item  form__social-item--google"><span class="sr-only">Google</span></a>
+                                <a href="javascript:;" class="form__social-item  form__social-item--ya"><span class="sr-only">Yandex</span></a>
+                            </div>
+                        </div>
+                        <div class="form__buttons"><input type="submit" value="Войти" class="form__button"><a href="restore.html" class="form__link  form__link--restore">Забыли пароль?</a></div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="main-footer__wrapper">
+            <div class="social-buttons">
+                <div class="addthis_inline_share_toolbox_a64i"></div>
+            </div>
+            <nav class="main-footer__menu">
+                <div class="main-footer__column">
+                    <div class="main-footer__menu-item">
+                        <h2 class="main-footer__menu-subtitle">Каталог</h2>
+                        <ul class="main-footer__menu-list">
+                            <li><a href="catalog-1.html">Листовые материалы</a></li>
+                            <li><a href="catalog-2.html">Сухие смеси и&nbsp;готовые составы</a></li>
+                            <li><a href="catalog-3.html">Гипсоплиты</a></li>
+                            <li><a href="catalog-4.html">Комплектующие</a></li>
+                            <li><a href="catalog-5.html">Профили</a></li>
+                            <li><a href="catalog-6.html">Инструменты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-footer__column">
+                    <div class="main-footer__menu-item">
+                        <h2 class="main-footer__menu-subtitle">Информация</h2>
+                        <ul class="main-footer__menu-list">
+                            <li><a href="information-1.html">Соглашение для дилеров</a></li>
+                            <li><a href="information-2.html">Пользовательское соглашение</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-footer__column">
+                    <div class="main-footer__menu-item">
+                        <h2 class="main-footer__menu-subtitle">Сервис</h2>
+                        <ul class="main-footer__menu-list">
+                            <li><a href="shops.html">Точки продаж</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="main-footer__copyright"><span>&copy;&nbsp;2019&nbsp;ООО &laquo;КНАУФ ГИПС&raquo;</span></div>
+        </div>
+    </footer>
+    <a class="modal-cities__link  sr-only" href="#modal-cities">triggers fancybox</a>
+    <div id='modal-cities' class="modal-city  modal-city--cities">
+        <a href="javascript:;" onclick="$.fancybox.close();" class="modal-city__close">Закрыть</a>
+        <h2 class="modal-city__title">Выберите свой город</h2>
+        <div class="modal-city__inner">
+            <div class="modal-city__column">
+                <div class="modal-city__city"><span>Москва</span></div>
+                <div class="modal-city__city"><span>Санкт-Петербург</span></div>
+                <div class="modal-city__city"><span>Новосибирск</span></div>
+                <div class="modal-city__city"><span>Екатеринбург</span></div>
+                <div class="modal-city__city"><span>Нижний Новгород</span></div>
+                <div class="modal-city__city"><span>Самара</span></div>
+                <div class="modal-city__city"><span>Омск</span></div>
+                <div class="modal-city__city"><span>Казань</span></div>
+                <div class="modal-city__city"><span>Челябинск</span></div>
+                <div class="modal-city__city"><span>Ростов-на-Дону </span></div>
+            </div>
+            <div class="modal-city__column">
+                <div class="modal-city__city"><span>Уфа</span></div>
+                <div class="modal-city__city"><span>Волгоград</span></div>
+                <div class="modal-city__city"><span>Пермь</span></div>
+                <div class="modal-city__city"><span>Красноярск</span></div>
+                <div class="modal-city__city"><span>Воронеж</span></div>
+                <div class="modal-city__city"><span>Саратов</span></div>
+                <div class="modal-city__city"><span>Краснодар</span></div>
+                <div class="modal-city__city"><span>Тольятти</span></div>
+                <div class="modal-city__city"><span>Ижевск</span></div>
+                <div class="modal-city__city"><span>Ульяновск</span></div>
+            </div>
+            <div class="modal-city__column">
+                <div class="modal-city__city  modal-city__city--nonActive"><span>Барнаул</span></div>
+                <div class="modal-city__city  modal-city__city--nonActive"><span>Владивосток</span></div>
+                <div class="modal-city__city  modal-city__city--nonActive"><span>Ярославль</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b218d19931edf6f"></script>
+</body>
+
+</html>

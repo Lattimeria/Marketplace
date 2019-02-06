@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knauf Market</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/jquery.bxslider.css" rel="stylesheet">
+    <link href="css/jquery.fancybox.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+</head>
+
+<body class="logged">
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="index.html" class="main-nav__logo"><img src="images/logo.png " alt="Knauf"></a>
+            <a href="https://www.knauf.ru/" class="main-nav__mainLogo"><img src="images/main-site-logo.png " alt="Knauf.ru"></a>
+            <a href="javascript:;"  onclick="$('.modal-cities__link').fancybox({
+        padding: 0,
+    }) .trigger('click');" class="main-nav__geo"></a>
+            <a href="javascript:;" class="main-nav__menuButton-mobile">Меню</a>
+            <ul class="main-nav__items">
+                <li class="main-nav__item  main-nav__item--close yesMobile"><a href="javascript:;" class="main-nav__item-link"><span class="sr-only">Закрыть</span></a></li>
+                <li class="main-nav__item  main-nav__item--mainLogo yesMobile"><a href="https://www.knauf.ru/" class="main-nav__item-link">knauf.ru</a></li>
+                <li class="main-nav__item  main-nav__item--index yesMobile"><a href="/" class="main-nav__item-link">Главная</a></li>
+                <li class="main-nav__item">
+                    <a href="catalog.html" class="main-nav__item-link">Каталог</a>
+                    <ul class="main-nav__item-dropdown">
+                        <li class="main-nav__item-dropdown-item  main-nav__item-dropdown--span noMobile"><span>Ваш выбор</span></li>
+                        <li class="main-nav__item-dropdown-item  main-nav__item-dropdown-item--pageLink"><a href="catalog.html" class="main-nav__item-dropdown-link">Обзор страницы Каталог</a></li>
+                        <li class="main-nav__item-dropdown-item"><a href="catalog-0.html" class="main-nav__item-dropdown-link">Новинки</a></li>
+                        <li class="main-nav__item-dropdown-item"><a href="catalog-1.html" class="main-nav__item-dropdown-link">Листовые материалы</a>
+                            <ul class="main-nav__item-dropdown2">
+                                <li class="main-nav__item-dropdown2-item  main-nav__item-dropdown-item--pageLink"><a href="catalog.html" class="main-nav__item-dropdown-link">Обзор страницы Листовые материалы</a></li>
+                                <li class="main-nav__item-dropdown2-item"><a href="catalog-1-1.html" class="main-nav__item-dropdown2-link">КНАУФ-Листы</a></li>
+                                <li class="main-nav__item-dropdown2-item"><a href="catalog-1-2.html" class="main-nav__item-dropdown2-link">КНАУФ-Акуборд</a></li>
+                                <li class="main-nav__item-dropdown2-item"><a href="catalog-1-3.html" class="main-nav__item-dropdown2-link">КНАУФ-Акустика</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-nav__item-dropdown-item"><a href="catalog-2.html" class="main-nav__item-dropdown-link">Сухие смеси и&nbsp;готовые составы</a></li>
+                        <li class="main-nav__item-dropdown-item"><a href="catalog-3.html" class="main-nav__item-dropdown-link">Гипсоплиты</a></li>
+                        <li class="main-nav__item-dropdown-item">
+                            <a href="catalog-4.html" class="main-nav__item-dropdown-link">Комплектующие</a>
+                        </li>
+                        <li class="main-nav__item-dropdown-item"><a href="catalog-5.html" class="main-nav__item-dropdown-link">Профили</a></li>
+                        <li class="main-nav__item-dropdown-item"><a href="catalog-6.html" class="main-nav__item-dropdown-link">Инструменты</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="main-nav__item">
+                    <a href="buyers.html" class="main-nav__item-link">Покупателям</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="shops.html" class="main-nav__item-link">Точки продаж</a>
+                </li>
+                <li class="main-nav__item  main-nav__item--login">
+                    <a href="login.html" class="main-nav__item-link  main-nav__item-link--login">Вход</a>
+                    <a href="javascript:;" class="main-nav__item-link  main-nav__item-link--logout">Выход</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="faq.html" class="main-nav__item-link">Вопрос-ответ</a>
+                </li>
+            </ul>
+            <a href="account.html" class="main-nav__account"><span class="sr-only">Аккаунт</span></a>
+            <a href="cart.html" class="main-nav__cart"><span class="sr-only">Корзина</span></a>
+            <div class="main-nav__search">
+                <a href="javascript:;"><span class="sr-only">Поиск</span></a>
+                <form action="" method="GET" onsubmit="">
+                    <input type="text" name="search" id="search" maxlength="50"><button type="submit">OK</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <div class="anchor-menu">
+                <ul class="anchor-menu__items">
+                    <li class="anchor-menu__item"><a href="#sx" class="anchor-menu__socialBtn  anchor-menu__socialBtn--bookmark"></a></li>
+                    <li class="anchor-menu__item"><a href="#sx" class="anchor-menu__socialBtn  anchor-menu__socialBtn--mail"></a></li>
+                    <li class="anchor-menu__item"><a href="https://www.youtube.com/user/KnaufRussia" class="anchor-menu__socialBtn  anchor-menu__socialBtn--youtube"></a></li>
+                    <li class="anchor-menu__item"><a href="https://twitter.com/Knauf_Russia" class="anchor-menu__socialBtn  anchor-menu__socialBtn--twitter"></a></li>
+                    <li class="anchor-menu__item"><a href="https://www.facebook.com/KnaufRu/" class="anchor-menu__socialBtn  anchor-menu__socialBtn--facebook"></a></li>
+                </ul>
+            </div>
+        </aside>
+        <section class="bcgBlock  bcgBlock--indexTop" style="background-image: url(images/blockbcg1.jpg);">
+            <div class="bcgBlock__wrapper">
+                <h2 class="bcgBlock__title">каталог</h2>
+                <a href="catalog.html" class="bcgBlock__link"><span>Подробнее</span></a>
+            </div>
+            <div class="textBlockOverBcgBlock textBlockOverBcgBlock--noMobile">
+                <div class="textBlockOverBcgBlock__wrapper">
+                    <h3 class="textBlockOverBcgBlock__title">Продукты и&nbsp;решения</h3>
+                    <p class="textBlockOverBcgBlock__text">В&nbsp;каждой стране, где продается наша продукция, КНАУФ&nbsp;&mdash; синоним качества и&nbsp;широты ассортимента. Поэтому каждый наш продукт достоин отдельного упоминания&nbsp;&mdash; и&nbsp;современные системы сухого строительства, и&nbsp;сухие строительные смеси, и&nbsp;штукатурные машины, и&nbsp;тепло- и&nbsp;энергосберегающие изоляционные материалы.</p>
+                    <a href="" class="textBlockOverBcgBlock__link">Поиск продуктов и&nbsp;систем</a>
+                </div>
+            </div>
+            <a href="#popular" class="scrollDownLink">Далее</a>
+        </section>
+        <section class="textBlockOverBcgBlock textBlockOverBcgBlock--yesMobile">
+            <div class="textBlockOverBcgBlock__wrapper">
+                <h3 class="textBlockOverBcgBlock__title">Продукты и&nbsp;решения</h3>
+                <p class="textBlockOverBcgBlock__text">В&nbsp;каждой стране, где продается наша продукция, КНАУФ&nbsp;&mdash; синоним качества и&nbsp;широты ассортимента. Поэтому каждый наш продукт достоин отдельного упоминания&nbsp;&mdash; и&nbsp;современные системы сухого строительства, и&nbsp;сухие строительные смеси, и&nbsp;штукатурные машины, и&nbsp;тепло- и&nbsp;энергосберегающие изоляционные материалы.</p>
+                <a href="" class="textBlockOverBcgBlock__link">Поиск продуктов и&nbsp;систем</a>
+            </div>
+        </section>
+        <section id="popular" class="sliderBlock  sliderBlock--popular">
+            <div class="sliderBlock__wrapper">
+                <h2 class="sliderBlock__title">Популярные товары</h2>
+                <div class="slider  slider--products">
+                    <div class="slider__item">
+                        <div class="slider__item-image">
+                            <img src="images/popular-product1.jpg" alt="КНАУФ-Ротбанд Паста Профи">
+                                </div>
+                            <div class="slider__item-inner">
+                                <a class="slider__item-titleProduct" href="product.html"><h3>КНАУФ-Ротбанд<br> Паста Профи</h3></a>
+                                <span class="slider__item-fromPrice">от 291 <span class="rub">c</span></span>
+                                <span class="slider__item-toPrice">до 340  <span class="rub">i</span></span>
+                                <a href="javascript:;" class="slider__item-cartLink">В корзину</a></div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__item-image">
+                                <img src="images/popular-product2.jpg" alt="КНАУФ-МП 75">
+                                </div>
+                                <div class="slider__item-inner">
+                                <a class="slider__item-titleProduct" href="product.html"><h3>КНАУФ-МП 75</h3></a>
+                                <span class="slider__item-fromPrice">от 291 <span class="rub">c</span></span>
+                                <span class="slider__item-toPrice">до 340  <span class="rub">i</span></span>
+                                <a href="javascript:;" class="slider__item-cartLink">В корзину</a></div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__item-image">
+                                    <img src="images/popular-product3.jpg" alt="КНАУФ-лист (ГСП- ГСП- DFH3IR)">
+                                </div>
+                                <div class="slider__item-inner">
+                                    <a class="slider__item-titleProduct" href="product.html"><h3>КНАУФ-лист (ГСП-<br> ГСП- DFH3IR)</h3></a>
+                                    <span class="slider__item-fromPrice">от 291 <span class="rub">c</span></span>
+                                    <span class="slider__item-toPrice">до 340  <span class="rub">i</span></span>
+                                    <a href="javascript:;" class="slider__item-cartLink">В корзину</a></div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__item-image">
+                                        <img src="images/popular-product4.jpg" alt="КНАУФ-Бетоконтакт">
+                                </div>
+                                <div class="slider__item-inner">
+                                        <a class="slider__item-titleProduct" href="product.html"><h3>КНАУФ-Бетоконтакт</h3></a>
+                                        <span class="slider__item-fromPrice">от 291 <span class="rub">c</span></span>
+                                        <span class="slider__item-toPrice">до 340  <span class="rub">i</span></span>
+                                        <a href="javascript:;" class="slider__item-cartLink">В корзину</a></div>
+                                    </div>
+                                    <div class="slider__item">
+                                        <div class="slider__item-image">
+                                            <img src="images/popular-product1.jpg" alt="КНАУФ-Ротбанд Паста Профи">
+                                </div>
+                                <div class="slider__item-inner">
+                                            <a class="slider__item-titleProduct" href="product.html"><h3>КНАУФ-Ротбанд<br> Паста Профи</h3></a>
+                                            <span class="slider__item-fromPrice">от 291 <span class="rub">c</span></span>
+                                            <span class="slider__item-toPrice">до 340  <span class="rub">i</span></span>
+                                            <a href="javascript:;" class="slider__item-cartLink">В корзину</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+        </section>
+        <section>
+            <div class="bcgBlock bcgBlock--indexMaterials" style="background-image: url(images/blockbcg2.jpg);">
+                <div class="bcgBlock__wrapper">
+                    <h2 class="bcgBlock__title">СТРОИТЕЛЬНО-ОТДЕЛОЧНЫЕ МАТЕРИАЛЫ</h2>
+                    <a href="#" class="bcgBlock__link"><span>Подробнее</span></a>
+                </div>
+            </div>
+            <div class="sliderBlock  sliderBlock--materials">
+                <div class="sliderBlock__wrapper">
+                    <div class="slider  slider--materials">
+                        <div class="slider__item">
+                            <div class="slider__item-image"><img src="images/material1.jpg" alt="Листовые материалы"></div>
+
+                            <div class="slider__item-inner">
+                                <h3 class="slider__item-title">Листовые материалы</h3>
+                                <a href="#" class="slider__item-link">Подробнее</a></div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__item-image"><img src="images/material2.jpg" alt="Сухие смеси и готовые составы"></div>
+                                <div class="slider__item-inner">
+                                    <h3 class="slider__item-title">Сухие смеси и готовые составы</h3>
+                                    <a href="#" class="slider__item-link">Подробнее</a></div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__item-image"><img src="images/material3.jpg" alt="Гипсоплиты"></div>
+                                    <div class="slider__item-inner">
+                                        <h3 class="slider__item-title">Гипсоплиты</h3>
+                                        <a href="#" class="slider__item-link">Подробнее</a></div>
+                                    </div>
+                                    <div class="slider__item">
+                                        <div class="slider__item-image"><img src="images/material4.jpg" alt="Комплектующие"></div>
+                                        <div class="slider__item-inner">
+                                            <h3 class="slider__item-title">Комплектующие</h3>
+                                            <a href="#" class="slider__item-link">Подробнее</a></div>
+                                        </div>
+                                        <div class="slider__item">
+                                            <div class="slider__item-image"><img src="images/material1.jpg" alt="Листовые материалы"></div>
+                                            <div class="slider__item-inner">
+                                                <h3 class="slider__item-title">Листовые материалы</h3>
+                                                <a href="#" class="slider__item-link">Подробнее</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="main-footer__wrapper">
+            <div class="social-buttons">
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox_a64i"></div>
+            </div>
+            <nav class="main-footer__menu">
+                <div class="main-footer__column">
+                    <div class="main-footer__menu-item">
+                        <h2 class="main-footer__menu-subtitle">Каталог</h2>
+                        <ul class="main-footer__menu-list">
+                            <li><a href="catalog-1.html">Листовые материалы</a></li>
+                            <li><a href="catalog-2.html">Сухие смеси и&nbsp;готовые составы</a></li>
+                            <li><a href="catalog-3.html">Гипсоплиты</a></li>
+                            <li><a href="catalog-4.html">Комплектующие</a></li>
+                            <li><a href="catalog-5.html">Профили</a></li>
+                            <li><a href="catalog-6.html">Инструменты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-footer__column">
+                    <div class="main-footer__menu-item">
+                        <h2 class="main-footer__menu-subtitle">Информация</h2>
+                        <ul class="main-footer__menu-list">
+                            <li><a href="information-1.html">Соглашение для дилеров</a></li>
+                            <li><a href="information-2.html">Пользовательское соглашение</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-footer__column">
+                    <div class="main-footer__menu-item">
+                        <h2 class="main-footer__menu-subtitle">Сервис</h2>
+                        <ul class="main-footer__menu-list">
+                            <li><a href="shops.html">Точки продаж</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="main-footer__copyright"><span>&copy;&nbsp;2019&nbsp;ООО &laquo;КНАУФ ГИПС&raquo;</span></div>
+        </div>
+    </footer>
+
+<a class="modal-city__link  sr-only" href="#modal-city">triggers fancybox</a>
+<div id='modal-city'  class="modal-city">
+    <a href="javascript:;" onclick="$.fancybox.close();" class="modal-city__close">Закрыть</a>
+    <h2 class="modal-city__title">Ваш город</h2>
+    <div class="modal-city__city"><span>Барнаул (Алтайский край)</span></div>
+    <div class="modal-city__buttons"><span class="modal-city__button  modal-city__button--yes">Да</span><span onclick="$.fancybox.close(); setTimeout(function() {
+    $('.modal-cities__link').fancybox({
+        padding: 0,
+    }) .trigger('click');
+}, 800);" class="modal-city__button  modal-city__button--no">Нет</span></div>
+</div>
+
+<a class="modal-cities__link  sr-only" href="#modal-cities">triggers fancybox</a>
+<div id='modal-cities'  class="modal-city  modal-city--cities">
+    <a href="javascript:;" onclick="$.fancybox.close();" class="modal-city__close">Закрыть</a>
+    <h2 class="modal-city__title">Выберите свой город</h2>
+    <div class="modal-city__inner">
+        <div class="modal-city__column">
+            <div class="modal-city__city"><span>Москва</span></div>
+            <div class="modal-city__city"><span>Санкт-Петербург</span></div>
+            <div class="modal-city__city"><span>Новосибирск</span></div>
+            <div class="modal-city__city"><span>Екатеринбург</span></div>
+            <div class="modal-city__city"><span>Нижний Новгород</span></div>
+            <div class="modal-city__city"><span>Самара</span></div>
+            <div class="modal-city__city"><span>Омск</span></div>
+            <div class="modal-city__city"><span>Казань</span></div>
+            <div class="modal-city__city"><span>Челябинск</span></div>
+            <div class="modal-city__city"><span>Ростов-на-Дону </span></div>
+        </div>
+
+        <div class="modal-city__column">
+            <div class="modal-city__city"><span>Уфа</span></div>
+            <div class="modal-city__city"><span>Волгоград</span></div>
+            <div class="modal-city__city"><span>Пермь</span></div>
+            <div class="modal-city__city"><span>Красноярск</span></div>
+            <div class="modal-city__city"><span>Воронеж</span></div>
+            <div class="modal-city__city"><span>Саратов</span></div>
+            <div class="modal-city__city"><span>Краснодар</span></div>
+            <div class="modal-city__city"><span>Тольятти</span></div>
+            <div class="modal-city__city"><span>Ижевск</span></div>
+            <div class="modal-city__city"><span>Ульяновск</span></div>
+        </div>
+
+        <div class="modal-city__column">
+            <div class="modal-city__city  modal-city__city--nonActive"><span>Барнаул</span></div>
+            <div class="modal-city__city  modal-city__city--nonActive"><span>Владивосток</span></div>
+            <div class="modal-city__city  modal-city__city--nonActive"><span>Ярославль</span></div>
+ 
+        </div>
+
+
+
+    
+
+</div>
+   
+</div>
+
+
+    <script src="js/main.js"></script>
+    <script>
+    $('document').ready(function() {
+
+
+        var initSlider = function(sliderSelector) {
+
+            var slider = $(sliderSelector);
+
+            var obxSettings = {
+                slideWidth: 204,
+                minSlides: 1,
+                maxSlides: 4,
+                moveSlides: 2,
+                infiniteLoop: false,
+                controls: true,
+                slideMargin: 26
+            };
+
+            var resizeSlider = function() {
+
+                var windowWidth = $(window).width();
+                if (windowWidth < 921 && windowWidth > 570) {
+                    obxSettings.minSlides = 2;
+                    obxSettings.maxSlides = 2;
+                    obxSettings.controls = true;
+
+                } else if (windowWidth < 571) {
+                    obxSettings.minSlides = 2;
+                    obxSettings.maxSlides = 2;
+                    obxSettings.controls = false;
+                    obxSettings.slideWidth = 270;
+
+                } else {
+                    obxSettings.minSlides = 4;
+                    obxSettings.maxSlides = 4;
+                    obxSettings.controls = true;
+                }
+
+
+            }
+
+            resizeSlider();
+
+            slider.bxSlider(obxSettings);
+
+            var summ = 0;
+            $('.bx-pager-item').each(function() {
+                summ += 1 * $(this).width();
+            });
+            $('.bx-controls-direction').width(summ);
+
+
+
+            $(window).resize(function() {
+                resizeSlider();
+
+                slider.reloadSlider();
+
+                var summ = 0;
+                $('.bx-pager-item').each(function() {
+                    summ += 1 * $(this).width();
+                });
+                $('.bx-controls-direction').width(summ);
+
+
+            });
+
+        }
+
+        initSlider('.slider--products');
+        initSlider('.slider--materials');
+ 
+    });
+    </script>
+
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b218d19931edf6f"></script>
+</body>
+
+</html>
